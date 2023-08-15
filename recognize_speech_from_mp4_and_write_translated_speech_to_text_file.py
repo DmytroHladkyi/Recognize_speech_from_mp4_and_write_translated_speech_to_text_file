@@ -46,6 +46,7 @@ except sr.RequestError as e:
 
 # Удаление временного WAV файла
 os.remove("temp.wav")
+os.remove(r'path\to\folder\audio2.wav') # если не хотим этот файл, чтобы он оставался
 
  # Replace with your key
 translator = deepl.Translator(auth_key)
